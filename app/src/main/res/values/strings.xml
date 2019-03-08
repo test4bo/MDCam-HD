@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MDCam-HD</string>
+    <string name="action_settings">Settings</string>
+    <string name="StartButton">Tap Me</string>
+    <string name="delayTime">Interval</string>
+    <string name="timeInput">seconds</string>
+</resources>
