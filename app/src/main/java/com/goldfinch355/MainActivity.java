@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 new Button.OnClickListener(){
                     public void onClick(View v){
                         TextView displaySeconds = (TextView)findViewById(R.id.displaySeconds);
-                        displaySeconds.setText("Hey you broke your phone huh?");
+                        displaySeconds.setText("You entered");
                     }
                 }
         );
@@ -61,5 +61,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void displayTime(View view) {
+        display(3);
+    }
+
+    private void display(int time) {
+        TextView displayThis = (TextView) findViewById(R.id.displayAfterTap);
+        displayThis.setText("" + time);
     }
 }
