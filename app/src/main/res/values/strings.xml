@@ -2,6 +2,9 @@
     <string name="app_name">MDCam-HD</string>
     <string name="action_settings">Settings</string>
     <string name="StartButton">Tap Me</string>
-    <string name="delayTime">Interval</string>
+    <string name="delayTime">Enter time:</string>
     <string name="timeInput">seconds</string>
+    <string name="tap_me_please">Tap me please...</string>
+    <string name="displayAfterTap"></string>
+    <string name="title">MDCam</string>
 </resources>

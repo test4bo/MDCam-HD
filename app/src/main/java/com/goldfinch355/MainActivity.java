@@ -29,16 +29,22 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });*/
+
+        /*
         Button startButton = (Button)findViewById(R.id.startButton);
 
         startButton.setOnClickListener(
                 new Button.OnClickListener(){
                     public void onClick(View v){
                         TextView displaySeconds = (TextView)findViewById(R.id.displaySeconds);
-                        displaySeconds.setText("You entered");
+                        displaySeconds.setText("Thank you!");
+                        TextView displayThis = (TextView) findViewById(R.id.displayAfterTap);
+                        displayThis.setText("Hello Awsome!");
+
                     }
                 }
         );
+        */
     }
 
     @Override
@@ -64,11 +70,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayTime(View view) {
-        display(3);
+        display();
     }
-
-    private void display(int time) {
+// To display after the tap
+    private void display() {
+        TextView displaySeconds = (TextView) findViewById(R.id.displaySeconds);
+        displaySeconds.setText("Thank you!");
         TextView displayThis = (TextView) findViewById(R.id.displayAfterTap);
-        displayThis.setText("" + time);
+        displayThis.setText("Hello Awsome!");
     }
 }
